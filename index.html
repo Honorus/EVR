@@ -10,10 +10,23 @@
 	.aaa:hover {
 		color: white;
 		cursor: pointer;
+		}	
+		
+	.spoiler .big-desc{
+		display: none;
 		}
 
-
+	.spoiler.title:after {
+		content: '\2193';
+		}
+	.spoiler.title.active:after {
+		content: '\2191';
+		}
+	
 </style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
 
 <head>
 <div style="background: #206639; color: white; text-align: center; position: absolute; width: 100%; height: 5%; font-size: 32px"> 
@@ -26,16 +39,28 @@
 <div style="width: 200px; height: 100%; top:5%; position: absolute; background: red">
 <br>
 
-<p class="aaa"><b>MENU</b></p>
-<a href="">1. Зачёт</p>
-<a href="">2. Автоматом</p>
+	<p class="aaa"><b>MENU</b></p>
+	<a href="">1. Зачёт</a>
+	<a href="">2. Автоматом</a>
 </div>
 
 <div style="background: green; position: absolute; top:5%; left: 200px">
-<img src="canvas.png" style="float:left">
-<img src="canvas.png" style="float:left">
-<img src="canvas.png" style="float:left">
-<img src="canvas.png" style="float:left">
+<div class="spoiler">
+		<p class="title"> Бюстгалтер 1 </p>
+		<img class="big-desc" src="canvas.png" style="float:left">
+</div>
+<div class="spoiler">
+		<p class="title"> Бюстгалтер 2 </p>
+		<img class="big-desc" src="canvas2.png" style="float:left">
+</div>
+<div class="spoiler">
+		<p class="title"> Бюстгалтер 3 </p>
+		<img class="big-desc" src="canvas3.png" style="float:left">
+</div>
+<div class="spoiler">
+		<p class="title"> Бюстгалтер 4 </p>
+		<img class="big-desc" src="canvas4.png" style="float:left">
+</div>
 </div>
 
 <!--
