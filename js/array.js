@@ -1,7 +1,8 @@
 
 
 $ (document).ready(function(){
-	$ ("button").click(function(){
+	$ ("div.spoiler").hide();
+	$ ("input[type=checkbox]").click(function(){
 		$ ("div.spoiler").show();
 		var newimg = [];
 		var a = $(".big-desc");
