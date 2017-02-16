@@ -18,12 +18,13 @@ $ (document).ready(function(){
 						
 				if(a == ext){
 					newimg.push(jImg);
-					}	
-				else{
-					jImg.parent().hide();
-				}
-					
+					}
 			});
+		});
+		
+		$(".spoiler").hide();
+		newimg.forEach(function(im){
+			im.parent().show()
 		});
 	});
 });
