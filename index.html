@@ -16,6 +16,17 @@
 		display: none;
 		}
 
+	.spoiler {
+		background: green;
+		top: 5%;
+		left: 200px;
+		position: relative;
+		}
+		
+	.spoiler .title{
+		position: relative;
+		}
+		
 	.spoiler.title:after {
 		content: '\2193';
 		}
@@ -27,6 +38,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/array.js"></script>
 
 <head>
 <div style="background: #206639; color: white; text-align: center; position: absolute; width: 100%; height: 5%; font-size: 32px"> 
@@ -40,28 +52,34 @@
 <br>
 
 	<p class="aaa"><b>MENU</b></p>
-	<a href="">1. Зачёт</a>
-	<a href="">2. Автоматом</a>
+	<a href="">Фильтр картинок</a> <br>
+	<input type="checkbox" value=".jpg"> .jpg <br>
+	<input type="checkbox" value=".png"> .png <br>
+	<input type="checkbox" value=".gif"> .gif <br>
+	<button> Filter </button>
+	
 </div>
 
-<div style="background: green; position: absolute; top:5%; left: 200px">
+
+
+
 <div class="spoiler">
 		<p class="title"> Бюстгалтер 1 </p>
 		<img class="big-desc" src="canvas.png" style="float:left">
 </div>
 <div class="spoiler">
 		<p class="title"> Бюстгалтер 2 </p>
-		<img class="big-desc" src="canvas2.png" style="float:left">
+		<img class="big-desc" src="canvas2.gif" style="float:left">
 </div>
 <div class="spoiler">
 		<p class="title"> Бюстгалтер 3 </p>
-		<img class="big-desc" src="canvas3.png" style="float:left">
+		<img class="big-desc" src="canvas3.jpg" style="float:left">
 </div>
 <div class="spoiler">
 		<p class="title"> Бюстгалтер 4 </p>
 		<img class="big-desc" src="canvas4.png" style="float:left">
 </div>
-</div>
+
 
 <!--
 <div style="background: blue; position: absolute; width: 45%; height: 45%; left: 55%; top: 5%">
