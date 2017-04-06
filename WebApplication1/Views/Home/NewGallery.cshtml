@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "NewGallery";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section script{
+    @*<script src="~/Scripts/main.js"></script>*@
+    <script src="~/Scripts/checkboxGallery.js"></script>
+    <script src="~/Scripts/ImageMagnification.js"></script>
+    @*<script src="~/Scripts/DeleteImage.js"></script>*@
+
+}
+
+<h2>New Gallery</h2>
+
+<body id="bd">
+    <div id="check" style="width: 100%; overflow:hidden; top:5%; position:relative; background: red;">
+        <b class="aaa">Image filter</b>
+        @*<b style="position:absolute; right:170px">Add new image:</b>*@
+        <p></p>
+        @*<a href="">Фильтр картинок</a> <br>*@
+        <div style="float:left; margin-right: 50px">
+            <label>
+                <input type="checkbox" checked value=".jpg"> .jpg
+            </label>
+        </div>
+        <div style="float:left; margin-right: 50px;">
+            <label>
+                <input type="checkbox" checked value=".png"> .png
+            </label>
+        </div>
+        <div style="float:left; margin-right: 50px;">
+            <label>
+                <input type="checkbox" checked value=".gif"> .gif
+            </label>
+        </div>
+        @*<div style="float:right">
+            @using (Html.BeginForm("LoadImage", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <input class="btn" type="file" name="file" id="file" multiple accept="image/*" />
+                <input class="btn" type="submit" />
+            }
+        </div>*@
+        <!--<button> Filter </button>-->
+    </div>
+    
+
+
+    @using (Html.BeginForm("DeleteImage", "Home", FormMethod.Post))
+    {
+        <div id="Gallery" style="position: relative;">
+
+        </div>
+    }
+    <a href="/Home/LoadImage" class="btn">Add new image</a>
+</body>
+

@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Load Image";
+}
+
+@section script{
+    <script src="~/Scripts/load_mini-image.js"></script>
+}
+
+<h2>Load Image</h2>
+
+@using (Html.BeginForm("LoadImage", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="file" id="file" multiple accept="image/*"/>
+    <input type="text" name="filename" id="filename" placeholder="Enter file name, please" required/>
+    <div id="imageContainer">
+
+    </div>
+    <input type="submit" id="load" />
+}
