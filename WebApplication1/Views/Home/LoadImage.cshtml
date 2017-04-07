@@ -11,9 +11,14 @@
 @using (Html.BeginForm("LoadImage", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     <input type="file" name="file" id="file" multiple accept="image/*"/>
-    <input type="text" name="filename" id="filename" placeholder="Enter file name, please" required/>
+    <div id="message" style="display:inline-block">
+        <br />
+        <p id="message" style="float:left"><b>Image name:</b></p>
+        <input type="text" name="filename" id="filename" placeholder="Enter file name, please" required/>
+    </div>
     <div id="imageContainer">
 
     </div>
+    <br />
     <input type="submit" id="load" />
 }

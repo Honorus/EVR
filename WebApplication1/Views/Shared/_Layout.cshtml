@@ -24,8 +24,10 @@
                     <span class="icon-bar"></span>
                 </button>
                 @*@Html.ActionLink("SHOP", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
-                <a href='@Url.Action("Index")'>
-                    <img src="~/Content/icons/Attire_Boobs.png" style="max-height: 50px"/> </a>
+                <a id="main" href='@Url.Action("Index")'>
+                    <img src="~/Content/icons/Attire_Boobs.png" style="max-height: 50px"/>                    
+                </a>
+                <span class="toolti"><a href="~/Content/icons/Attire_Boobs.psd" download>Download logo</a></span>
             </div>
             <div class="navbar-collapse collapse" style="margin-top:10px">
                 <ul class="nav navbar-nav">

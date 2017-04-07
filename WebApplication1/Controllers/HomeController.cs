@@ -50,7 +50,6 @@ namespace WebApplication1.Controllers
         {
             string path = Path.Combine(Server.MapPath("~"), "Content", "image");
             string[] filenames = Directory.GetFiles(path);
-
             var ap = filenames.Select(x => Path.GetFileName(x));
             //string serverPath = Path.Combine(Server.UrlPathEncode)
            
@@ -61,6 +60,7 @@ namespace WebApplication1.Controllers
                 Filename = Path.GetFileName(x),
                 Extension = Path.GetExtension(x),
                 Rating =  rand.Next(0, 5)});
+            
             return Json(b, JsonRequestBehavior.AllowGet);
         }
 

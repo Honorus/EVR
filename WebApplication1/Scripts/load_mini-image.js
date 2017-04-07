@@ -1,7 +1,8 @@
 ﻿$(document).ready(function () {
     var imgInput = $('#file');
     var imgCont = $('#imageContainer');
-    $('#filename').hide();
+    $('#message').hide();
+    //$('#filename').hide();
 
     function displayImg(file) {
         file = document.querySelector('input[type=file]').files[0];
@@ -24,7 +25,8 @@
     imgInput.bind({
         change: function () {
             displayImg(this);
-            $('#filename').show();
+            $('#message').show();
+            //$('#filename').show();
         }
     });
 
