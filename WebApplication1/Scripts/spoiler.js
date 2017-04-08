@@ -6,8 +6,8 @@ alert("???");
 
 $(document).ready(function () {
 
-    $("#Description").on('click', ".spoiler .title", function () {
+    $("#Description").on('click', ".spoiler .spoiler-title", function () {
         $(this).toggleClass("active");
-        $(this).parent().find(".big-desc").toggle(500);
+        $(this).parent().find(".spoiler-container").toggle(500);
     });
 });

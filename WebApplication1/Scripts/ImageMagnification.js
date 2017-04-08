@@ -1,7 +1,7 @@
 ﻿
 
 $(document).ready(function () {
-    $("#Gallery").on('click', ".image", function () {
+    $("#Gallery").on('click', ".image-preview", function () {
         //document.getElementById('body-content-Gallery').style.overflow = 'hidden';
         $('#body-content-Gallery').css('overflow', 'hidden');
         var image = $(this);

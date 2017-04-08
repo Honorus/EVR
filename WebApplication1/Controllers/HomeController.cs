@@ -36,9 +36,9 @@ namespace WebApplication1.Controllers
             return View("NewGallery");
         }
         [HttpPost]
-        public ActionResult DeleteImage(string imgSrc)
+        public ActionResult DeleteImage(string imageSrc)
         {
-            var filePath = Server.MapPath("~" + imgSrc);
+            var filePath = Server.MapPath("~" + imageSrc);
             System.IO.File.Delete(filePath);
 
             return RedirectToAction("NewGallery");

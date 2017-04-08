@@ -28,7 +28,7 @@
                 <a id="main" href='@Url.Action("Index")'>
                     <img src="~/Content/icons/Attire_Boobs.png" style="max-height: 50px"/>                    
                 </a>
-                <span class="toolti"><a href="~/Content/icons/Attire_Boobs.psd" download>Download logo</a></span>
+                <span class="myTooltip"><a href="~/Content/icons/Attire_Boobs.psd" download>Download logo</a></span>
             </div>
             <div class="navbar-collapse collapse" style="margin-top:10px">
                 <ul class="nav navbar-nav">
@@ -37,7 +37,6 @@
                     <li>@Html.ActionLink("New Gallery", "NewGallery", "Home")</li>
                     <li>@Html.ActionLink("Load Image", "LoadImage", "Home")</li>
                     <li>@Html.ActionLink("List Image", "ListImage", "Home")</li>
-                    @*<li><img src="~/Content/icons/Attire_Boobs.psd"/></li>*@
                 </ul>
             </div>
         </div>
@@ -55,7 +54,7 @@
 
     <div class="container footer-content">
         <hr />
-        <footer style="cursor:pointer">
+        <footer>
             <p id="footer">&copy; @DateTime.Now.Year - Никита Ясонов. Первый после Бога.<input id="inputColor" type="color" /> </p>
         </footer>
     </div>
