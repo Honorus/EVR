@@ -7,10 +7,10 @@ using System.Web.Mvc;
 
 namespace WebApplication1.Controllers
 {
-    public class Bra
+    public class Image
     {
-        public string Filename { get; set; }
-        public string FileUrl { get; set; }
+        public string ImageName { get; set; }
+        public string ImageUrl { get; set; }
         public string Extension { get; set; }
         public int Rating { get; set; }
     }
@@ -40,8 +40,6 @@ namespace WebApplication1.Controllers
         {
             var filePath = Server.MapPath("~" + imgSrc);
             System.IO.File.Delete(filePath);
-            //string path = Path.Combine(, "Content", "image", file.FileName);
-            //file.
 
             return RedirectToAction("NewGallery");
         }
@@ -49,19 +47,19 @@ namespace WebApplication1.Controllers
         public JsonResult ListImage()
         {
             string path = Path.Combine(Server.MapPath("~"), "Content", "image");
-            string[] filenames = Directory.GetFiles(path);
-            var ap = filenames.Select(x => Path.GetFileName(x));
+            string[] files = Directory.GetFiles(path);
+            var filenames = files.Select(name => Path.GetFileName(name));
             //string serverPath = Path.Combine(Server.UrlPathEncode)
            
-            var a = ap.Select(name => Url.Content("~/Content/Image/" + name));
+            var filePaths = filenames.Select(name => Url.Content("~/Content/Image/" + name));
             Random rand = new Random();
-            var b = a.Select(x => new Bra {
-                FileUrl = x,
-                Filename = Path.GetFileName(x),
-                Extension = Path.GetExtension(x),
+            var image = filePaths.Select(filePath => new Image {
+                ImageUrl = filePath,
+                ImageName = Path.GetFileName(filePath),
+                Extension = Path.GetExtension(filePath),
                 Rating =  rand.Next(0, 5)});
             
-            return Json(b, JsonRequestBehavior.AllowGet);
+            return Json(image, JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult Gallery()

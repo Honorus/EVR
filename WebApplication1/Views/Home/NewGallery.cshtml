@@ -14,11 +14,11 @@
 
 <h2>New Gallery</h2>
 
-<body id="bd">
+<body id="body-content-Gallery">
     <div id="check" style="width: 100%; overflow:hidden; top:5%; position:relative; background: red;">
-        <b class="aaa">Image filter</b>
-        @*<b style="position:absolute; right:170px">Add new image:</b>*@
-        <p></p>
+        <p>
+            <b class="checkboxHeader">Image filter</b>
+        </p>
         @*<a href="">Фильтр картинок</a> <br>*@
         <div style="float:left; margin-right: 50px">
             <label>
@@ -35,14 +35,6 @@
                 <input type="checkbox" checked value=".gif"> .gif
             </label>
         </div>
-        @*<div style="float:right">
-            @using (Html.BeginForm("LoadImage", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
-            {
-                <input class="btn" type="file" name="file" id="file" multiple accept="image/*" />
-                <input class="btn" type="submit" />
-            }
-        </div>*@
-        <!--<button> Filter </button>-->
     </div>
     
 

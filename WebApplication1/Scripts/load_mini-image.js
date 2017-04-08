@@ -1,14 +1,13 @@
 ﻿$(document).ready(function () {
-    var imgInput = $('#file');
-    var imgCont = $('#imageContainer');
-    $('#message').hide();
+    var imageInput = $('#file');
+    var imageContainer = $('#imageContainer');
+    $('#inputImageName').hide();
     //$('#filename').hide();
 
-    function displayImg(file) {
+    function displayImage(file) {
         file = document.querySelector('input[type=file]').files[0];
-        //$('<div id = "imageName"></div>').text(file.name).appendTo(imgCont);
         $('#filename').val(file.name);
-        var img = $('<img/>').appendTo(imgCont);
+        var image = $('<img/>').appendTo(imageContainer);
         //$('<div/>').addClass('progress').attr('rel', '0').text('0%').appendTo(imgCont);
         //imgCont.get(0).file = file;
         
@@ -18,14 +17,14 @@
                 aImg.attr('src', e.target.result);
                 aImg.attr('width', 150);
             };
-        })(img);
+        })(image);
         reader.readAsDataURL(file);
     }
 
-    imgInput.bind({
+    imageInput.bind({
         change: function () {
-            displayImg(this);
-            $('#message').show();
+            displayImage(this);
+            $('#inputImageName').show();
             //$('#filename').show();
         }
     });

@@ -106,13 +106,12 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\checkboxGallery.js" />
-    <Content Include="Scripts\DeleteImage.js" />
-    <Content Include="Scripts\hint.js" />
+    <Content Include="Scripts\footersColor.js" />
     <Content Include="Scripts\ImageMagnification.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\load_mini-image.js" />
-    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\spoiler.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Home\LoadImage.cshtml" />
