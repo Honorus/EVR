@@ -8,6 +8,15 @@
 
 <h2>Load Image</h2>
 
+<div class="alert-message">
+    <div class="message">
+        <span class="message-text">
+            This file type is not supported. Try uploading an image.
+        </span>
+        <button class="close-message"></button>
+    </div>
+</div>
+
 @using (Html.BeginForm("LoadImage", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     <input type="file" name="file" id="file" multiple accept="image/*"/>

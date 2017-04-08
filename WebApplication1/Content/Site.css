@@ -252,7 +252,55 @@ textarea {
     background-position: -150px center;
 }*/
 
+#file{
+    cursor:pointer;
+}
+
 #filename {
     text-overflow: ellipsis;
     width: 200px;
+}
+
+.alert-message{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:-40px;
+    text-align:center;
+    z-index: 1000;
+    transition: top 0.5s;
+    /*background-color: rgba(3, 3, 3, 0.36);*/
+}
+
+.message {
+    position: relative;
+    width: 600px;
+    border: 1px solid black;
+    text-align:center;
+    padding: 30px 0 30px 0;
+    left: calc((100vw - 600px) / 2);
+    background: #f7d6d0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+}
+
+.message-text{
+    text-align:center;
+    font-size:16px;
+}
+
+.close-message{
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 0.5;
+    width:19px;
+    height:19px;
+    background: transparent;
+    border: transparent;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAqklEQVR4XqWRMQ6DMAxF/1Fyilyj2SmIBUG5QcTCyJA5Z8jGhlBPgRi4TmoDraVmKFJlWYrlp/g5QfwRlwEVNWVa4WzfH9jK6kCkEkBjwxOhLghheMWMELUAqqwQ4OCbnE4LJnhr5IYdqQt4DJQjhe9u4vBBmnxHHNzRFkDGjHDo0VuTAqy2vAG4NkvXXDHxbGsIGlj3e835VFNtdugma/Jk0eXq0lP//5svi4PtO01oFfYAAAAASUVORK5CYII=");
+}
+
+.message:hover .close-message{
+    opacity: 1;
 }
