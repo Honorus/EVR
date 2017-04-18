@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dao.Model;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -7,13 +8,7 @@ using System.Web.Mvc;
 
 namespace WebApplication1.Controllers
 {
-    public class Image
-    {
-        public string ImageName { get; set; }
-        public string ImageUrl { get; set; }
-        public string Extension { get; set; }
-        public int Rating { get; set; }
-    }
+    
     public class HomeController : Controller
     {
         // GET: Home
@@ -57,7 +52,8 @@ namespace WebApplication1.Controllers
                 ImageUrl = filePath,
                 ImageName = Path.GetFileName(filePath),
                 Extension = Path.GetExtension(filePath),
-                Rating =  rand.Next(0, 5)});
+                Rating = rand.Next(0, 5),
+            });
             
             return Json(image, JsonRequestBehavior.AllowGet);
         }

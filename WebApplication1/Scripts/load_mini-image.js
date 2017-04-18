@@ -33,6 +33,8 @@
     imageInput.bind({
         change: function () {
             displayImage(this);
+            var date = new Date();
+
             //$('#filename').show();
         }
     });

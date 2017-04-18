@@ -64,3 +64,15 @@ D:\OurProject\EVR\WebApplication1\bin\System.Web.Mvc.xml
 D:\OurProject\EVR\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 D:\OurProject\EVR\WebApplication1\obj\Debug\WebApplication1.dll
 D:\OurProject\EVR\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\OurProject\EVR\WebApplication1\bin\Dao.dll
+D:\OurProject\EVR\WebApplication1\bin\EntityFramework.dll
+D:\OurProject\EVR\WebApplication1\bin\Dao.pdb
+D:\OurProject\EVR\WebApplication1\bin\EntityFramework.xml
+D:\OurProject\EVR\WebApplication1\bin\ru\System.Web.Razor.resources.dll
+D:\OurProject\EVR\WebApplication1\bin\ru\System.Web.Webpages.resources.dll
+D:\OurProject\EVR\WebApplication1\bin\ru\System.Web.Webpages.Deployment.resources.dll
+D:\OurProject\EVR\WebApplication1\bin\ru\System.Web.Webpages.Razor.resources.dll
+D:\OurProject\EVR\WebApplication1\bin\ru\System.Web.Helpers.resources.dll
+D:\OurProject\EVR\WebApplication1\bin\ru\System.Web.Mvc.resources.dll
+D:\OurProject\EVR\WebApplication1\bin\EntityFramework.SqlServer.dll
+D:\OurProject\EVR\WebApplication1\bin\EntityFramework.SqlServer.xml

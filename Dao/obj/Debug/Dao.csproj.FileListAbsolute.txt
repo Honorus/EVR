@@ -1,0 +1,12 @@
+D:\OurProject\EVR\Dao\bin\Debug\Dao.dll.config
+D:\OurProject\EVR\Dao\bin\Debug\Dao.dll
+D:\OurProject\EVR\Dao\bin\Debug\Dao.pdb
+D:\OurProject\EVR\Dao\bin\Debug\EntityFramework.dll
+D:\OurProject\EVR\Dao\bin\Debug\EntityFramework.SqlServer.dll
+D:\OurProject\EVR\Dao\bin\Debug\EntityFramework.xml
+D:\OurProject\EVR\Dao\bin\Debug\EntityFramework.SqlServer.xml
+D:\OurProject\EVR\Dao\obj\Debug\Dao.csprojResolveAssemblyReference.cache
+D:\OurProject\EVR\Dao\obj\Debug\Dao.dll
+D:\OurProject\EVR\Dao\obj\Debug\Dao.pdb
+D:\OurProject\EVR\Dao\obj\Debug\Dao.Migration.AddImageModel.resources
+D:\OurProject\EVR\Dao\obj\Debug\Dao.csproj.GenerateResource.Cache
