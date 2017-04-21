@@ -10,3 +10,4 @@ D:\OurProject\EVR\Dao\obj\Debug\Dao.dll
 D:\OurProject\EVR\Dao\obj\Debug\Dao.pdb
 D:\OurProject\EVR\Dao\obj\Debug\Dao.Migration.AddImageModel.resources
 D:\OurProject\EVR\Dao\obj\Debug\Dao.csproj.GenerateResource.Cache
+D:\OurProject\EVR\Dao\obj\Debug\Dao.Migrations.AddNameForUser.resources

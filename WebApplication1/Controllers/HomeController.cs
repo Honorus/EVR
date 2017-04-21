@@ -1,4 +1,6 @@
-﻿using Dao.Model;
+﻿using Dao;
+using Dao.Model;
+using Dao.Repo;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -11,6 +13,15 @@ namespace WebApplication1.Controllers
     
     public class HomeController : Controller
     {
+        private BoobsContext boobsContext;
+        private RepositoryUser repositoryUser;
+
+        public HomeController()
+        {
+            boobsContext = new BoobsContext();
+            repositoryUser = new RepositoryUser(boobsContext);
+        }
+
         // GET: Home
         public ActionResult Index()
         {
@@ -66,6 +77,21 @@ namespace WebApplication1.Controllers
         public ActionResult NewGallery()
         {
             return View();
+        }
+
+        public ActionResult SaveUser()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult SaveUser(string username)
+        {
+            var u = new User();
+            u.Name = username;
+            repositoryUser.Save(u);
+
+            return Json(u, JsonRequestBehavior.AllowGet);
+            //return View();
         }
 
     }

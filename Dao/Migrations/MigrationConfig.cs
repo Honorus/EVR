@@ -11,7 +11,7 @@ namespace Dao.Migrations
     {
         public MigrationConfig()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
             ContextKey = "Dao.BoobsContext";
         }
 

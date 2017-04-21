@@ -9,5 +9,7 @@ namespace Dao.Model
     public class User: BaseModel
     {
         public virtual List<Image> Images { get; set; }
+        public virtual string Name { get; set; }
+
     }
 }
