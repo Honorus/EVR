@@ -81,17 +81,37 @@ namespace WebApplication1.Controllers
 
         public ActionResult SaveUser()
         {
+            var allUsers = repositoryUser.GetAllUsers();
+            //var user = allUsers.Select(x => x.Name).ToList();
+            ViewBag.Us = allUsers;
+
             return View();
         }
         [HttpPost]
         public ActionResult SaveUser(string username)
         {
-            var u = new User();
-            u.Name = username;
-            repositoryUser.Save(u);
+            var user = new User();
+            user.Name = username;
+            repositoryUser.Save(user);
 
-            return Json(u, JsonRequestBehavior.AllowGet);
+            return Json(user, JsonRequestBehavior.AllowGet);
             //return View();
+        }
+
+        //public ActionResult DisplayUsers()
+        //{
+        //    var allUsers = repositoryUser.GetAllUsers();
+        //    var user = allUsers.Select(x => x.Name).ToList();
+        //    ViewBag.Us = user;
+
+        //    return View();
+        //}
+
+        public ActionResult Remove(long id)
+        {
+            repositoryUser.Remove(id);
+
+            return RedirectToAction("SaveUser");
         }
 
     }

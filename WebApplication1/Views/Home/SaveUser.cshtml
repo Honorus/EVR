@@ -11,3 +11,17 @@
     <input type="text" name="username" />
     <input type="submit"/>
 }
+
+<table>
+    @foreach (var u in ViewBag.Us)
+    {
+        <tr>
+            <td>
+                @u.Name
+            </td>
+            <td>
+                <a href="/Home/Remove/@u.Id">Удалить</a>
+            </td>
+        </tr>
+    }
+</table>

@@ -41,5 +41,16 @@ namespace Dao.Repo
             Db.SaveChanges();
             return model;
         }
+
+        public List<User> GetAllUsers()
+        {
+            return Entity.ToList();
+        }
+
+        public void Remove(long id)
+        {
+            Entity.Remove(GetById(id));
+            Db.SaveChanges();
+        }
     }
 }
